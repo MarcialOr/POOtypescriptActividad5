@@ -1,0 +1,27 @@
+/* Estilo para el fondo */
+body {
+    background-image: url('./src/img/mercedez1.jpg'); /* Cambia esta URL por tu imagen */
+    background-size: cover; /* Cubre toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    position: relative; /* Necesario para el pseudo-elemento */
+    height: 100vh; /* Altura del viewport */
+    color: white; /* Color del texto */
+}
+
+/* Pseudo-elemento para añadir una capa de transparencia */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de transparencia */
+    z-index: 1; /* Para que esté detrás del contenido */
+}
+
+/* Asegúrate de que el contenido está encima del pseudo-elemento */
+.container {
+    position: relative;
+    z-index: 2; /* Para que esté encima del fondo */
+}
