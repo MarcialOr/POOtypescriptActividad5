@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Asegura que no haya margen predeterminado */
+    background-image: url('../src/img/mercedez1.jpg'); /* Cambia esta URL por tu imagen */
+    background-size: cover; /* Cubre toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    position: relative; /* Necesario para el pseudo-elemento */
+    height: 100vh; /* Altura del viewport */
+    color: white; /* Color del texto */
+}
+
+.calculadora {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Asegura que esté encima del fondo */
+    position: relative; /* Para el z-index */
+}

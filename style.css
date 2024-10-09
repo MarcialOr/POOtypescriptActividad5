@@ -25,3 +25,4 @@ body::before {
     position: relative;
     z-index: 2; /* Para que esté encima del fondo */
 }
+

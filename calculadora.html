@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/calculadora.css">
+
+</head>
+<body>
+
+         <!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Ejercicios</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+                </li>
+                    <li class="nav-item">
+                        <a id="change-color-btn" class="nav-link active" href="calculadora.html">Calculadora</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="change-color-btn" class="nav-link " href="cancion.html">Cancion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="change-color-btn" class="nav-link " href="cuenta.html">Cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="change-color-btn" class="nav-link " href="perfil.html">Perfil</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Calculadora -->
+    <div class="calculadora">
+        <h2 class="text-center">Calculadora</h2>
+        
+        <!-- Campo de entrada para ver la operación -->
+        <input type="text" id="operacion-preview" class="form-control mb-2" readonly />
+
+        <!-- Resultado -->
+        <input type="text" id="resultado" class="form-control mb-3" readonly />
+
+        <!-- Números -->
+        <div class="row">
+            <div class="col-4">
+                <button class="btn btn-primary btn-block mb-2 btn-numero" data-numero="1">1</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-primary btn-block mb-2 btn-numero" data-numero="2">2</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-primary btn-block mb-2 btn-numero" data-numero="3">3</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <button class="btn btn-primary btn-block mb-2 btn-numero" data-numero="4">4</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-primary btn-block mb-2 btn-numero" data-numero="5">5</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-primary btn-block mb-2 btn-numero" data-numero="6">6</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <button class="btn btn-primary btn-block mb-2 btn-numero" data-numero="7">7</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-primary btn-block mb-2 btn-numero" data-numero="8">8</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-primary btn-block mb-2 btn-numero" data-numero="9">9</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-primary btn-block mb-2 btn-numero" data-numero="0">0</button>
+            </div>
+        </div>
+
+        <!-- Operaciones -->
+        <div class="row">
+            <div class="col-4">
+                <button class="btn btn-warning btn-block mb-2 btn-operacion" data-operacion="sumar">+</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-warning btn-block mb-2 btn-operacion" data-operacion="restar">-</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-warning btn-block mb-2 btn-operacion" data-operacion="multiplicar">*</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <button class="btn btn-warning btn-block mb-2 btn-operacion" data-operacion="dividir">/</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-warning btn-block mb-2 btn-operacion" data-operacion="potencia">^</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-warning btn-block mb-2 btn-operacion" data-operacion="factorial">!</button>
+            </div>
+        </div>
+
+        <!-- Botón igual -->
+        <div class="row">
+            <div class="col-12">
+                <button id="igual-btn" class="btn btn-success btn-block mb-2">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Asegúrate de que el nombre del archivo JS sea correcto -->
+</body>
+</html>
